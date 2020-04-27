@@ -15,6 +15,7 @@ class Scraper
       name = student.css(".student-name").text
       location = student.css(".student-location").text
       profile_url = student.css(".student-card").css("a").attribute("href").value
+      binding.pry
       student_info = {
         :name => name,
         :location => location,
