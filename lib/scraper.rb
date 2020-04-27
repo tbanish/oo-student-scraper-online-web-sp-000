@@ -22,7 +22,7 @@ class Scraper
   end
       
       
-    # twitter
+    # twitter => doc.css(".social-icon-container").css("a").attribute("href").text
     # linkedin
     # github
     # blog
