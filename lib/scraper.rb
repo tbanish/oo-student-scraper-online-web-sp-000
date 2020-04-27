@@ -21,9 +21,9 @@ class Scraper
         :profile_url => profile_url,
       }
       students << student_info
+      binding.pry
     end
     students
-    binding.pry
   end
       
       
