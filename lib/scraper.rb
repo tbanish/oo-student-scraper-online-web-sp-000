@@ -48,7 +48,7 @@ class Scraper
       end
     end
     
-    student_profile_quote = 
+    student[:profile_quote] =  
     
     student
     
