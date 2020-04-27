@@ -3,7 +3,7 @@ require 'pry'
 
 # name => doc.css(".student-name").first.text
 # location => doc.css(".student-location").first.text
-# profile_url =>
+# profile_url => doc.css(".student-card").first.css("a").attribute("href").value
 
 class Scraper
 
