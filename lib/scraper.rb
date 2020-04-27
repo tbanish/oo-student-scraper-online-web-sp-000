@@ -38,7 +38,7 @@ class Scraper
     
     container.each do |link|
       if link.include?("twitter")
-        student
+        student[:twitter] = link
     
     
     
