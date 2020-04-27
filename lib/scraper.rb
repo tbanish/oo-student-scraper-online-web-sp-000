@@ -13,5 +13,6 @@ class Scraper
 
 end
 
+
 Scraper.new.scrpae_index_page()
 
