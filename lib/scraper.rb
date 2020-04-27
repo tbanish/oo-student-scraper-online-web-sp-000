@@ -11,7 +11,7 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
     students = []
     
-    doc.each 
+    doc.css("div.student-card")
     
     
     
