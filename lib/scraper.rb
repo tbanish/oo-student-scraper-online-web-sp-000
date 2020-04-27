@@ -1,9 +1,9 @@
 require 'open-uri'
 require 'pry'
 
-# name => doc.css(".student-name").first.text
-# location => doc.css(".student-location").first.text
-# profile_url => doc.css(".student-card").first.css("a").attribute("href").value
+# name => doc.css(".student-name").text
+# location => doc.css(".student-location").text
+# profile_url => doc.css(".student-card").css("a").attribute("href").value
 
 class Scraper
 
@@ -11,7 +11,17 @@ class Scraper
     doc = Nokogiri::HTML(open(index_url))
     students = []
     
-    doc.css("div.student-card")
+    doc.css("div.student-card").each do |student|
+      name = student.css(".student-name").text
+      location = student.css(".student-location").text
+      profile_url = student.css(".student-card").css("a").attribute("href").value
+      student_info = {
+        :name => name
+        :location => location
+        :profile_url = profile_url
+      }
+      
+      
     
     
     
