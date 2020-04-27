@@ -39,7 +39,7 @@ class Scraper
     end
     
     student[:profile_quote] = doc.css(".profile-quote").first.text
-    student[:bio] = doc.css(".description-holder p").first.text
+    student[:bio] = doc.css(".description-holder p").first
     student
   end
 
