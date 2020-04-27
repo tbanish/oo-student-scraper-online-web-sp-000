@@ -20,8 +20,8 @@ class Scraper
         :location => location,
         :profile_url => profile_url,
       }
-      students << student_info
       binding.pry
+      students << student_info
     end
     students
   end
