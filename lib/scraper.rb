@@ -2,7 +2,7 @@ require 'open-uri'
 require 'pry'
 
 # name => doc.css(".student-name").first.text
-# location =>
+# location => doc.css(".student-location").first.text
 # profile_url =>
 
 class Scraper
