@@ -13,7 +13,6 @@ class Student
     students_array.collect do |student|
       self.new(student)
     end
-    end
 
   end
 
